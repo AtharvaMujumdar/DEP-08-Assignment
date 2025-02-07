@@ -117,7 +117,9 @@ header section img{
     width: 1rem;
     height: 1rem;
     text-align: center;
-    padding: 0.1rem;
+    /* padding: 0.1rem; */
+    font-size: smaller;
+    
 }
 .section1-list a:hover{
     color: rgb(119, 228, 245);
@@ -149,7 +151,7 @@ main{
 
 .card{
     display: flex;
-    width: 300px;
+    width: 22.5rem;
     border: none;
     border-radius: 0.5rem;
     flex-direction: column;
@@ -170,6 +172,7 @@ main{
 .card-number{
     text-align: center;
     display: flex;
+    flex-direction: column;
     border: 10px solid rgb(27, 194, 236);
     border-radius: 50%;
     height: 11rem;
@@ -178,13 +181,18 @@ main{
     justify-content: center;
     margin: 1rem;
 }
-
+.card-number p{
+    color: grey;
+    margin: 0.2rem;
+}
 .table-container{
     overflow-x: auto;
     width: 100%;
 }
 
-table {
+
+
+.table1{
     width: 100%;
     border:1px solid black;
     margin-bottom: 20px;
@@ -195,15 +203,16 @@ table {
     color: black;
     
 }
-th{
+.table1 th{
     background-color: rgba(249, 248, 245, 0.742);
     border-bottom: 1px solid black;
     padding: 0.5rem;
     color: black;
     font-size: small;
     font-weight: 0.1;
+    
 }
-td{
+.table1 td{
     padding: 1rem;
     color: black;
 }
@@ -213,6 +222,22 @@ td{
 
 .question-mark{
     height: 1.5rem;
+}
+.sorting-arrows-img{
+    margin: 0.2rem;
+    align-items: center;
+}
+
+.sorting-arrows-img img{
+    height: 1rem;
+}
+
+.all-leaves{
+    position: sticky;
+    z-index: 1000;
+}
+.image2{
+    border: 10px solid rgb(235, 238, 243);
 }
 
 @media (max-width:400px){
@@ -224,6 +249,19 @@ td{
         margin: 0.5rem;
        height: 2rem;
     }
+    .table-container th{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    .table-container tr{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .sorting-arrows-img img{
+        height: 0.5rem;
+    }
+    
 }
 
 @media (max-width:900px){
@@ -237,6 +275,19 @@ td{
     .card{
         margin: 1rem;
     }
+    .table-container th{
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    .table-container tr{
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .sorting-arrows-img img{
+        height: 0.7rem;
+    }
+   
 }
 
 @media (max-width:1100px){
