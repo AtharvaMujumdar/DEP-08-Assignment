@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(84, 82, 82);
+}
+header{
+    background-color: #303240;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    text-align: center;
+    margin: 10px;
+}
+.nav-list a:active{
+    border-bottom: 5px solid blue;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1.4rem 0.5rem;
+}
+
+header section img{
+    height: 50px;
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+}
+.right-side{
+    display: flex;
+    align-items: center;
+}
+.nav-button{
+    background-color: rgb(27, 194, 236);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    
+    font-size: medium;
+    border:none;
+
+}
+.nav-button h5{
+    color: white;
+}
+.nav-button:hover{
+    opacity: 80%;
+}
+
+.nav-image{
+    border-radius: 50%;
+    margin: 1rem;
+    height: 2.2rem;
+}
+.nav-image1{
+    margin: 1rem;
+    height: 2.2rem;
+}
+
+.nav-list a:hover{
+    background-color: black;
+}
+
+.section1{
+   box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
+   
+}
+
+.section1-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.section1-list a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.6rem 0rem;
+    font-size: 0.9rem;
+}
+
+
+.section1-list li{
+    text-align: center;
+    margin: 10px;
+    font-size:0.9rem;
+}
+.zero{
+    border-radius: 50%;
+    background-color: rgba(218, 218, 218, 0.863);
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    padding: 0.1rem;
+}
+.section1-list a:hover{
+    color: rgb(119, 228, 245);
+}
+
+main{
+    background-color: rgba(245, 245, 245, 0.945);
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.main-header h3{
+    color: rgb(119, 228, 245);
+}
+
+.all-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.card{
+    display: flex;
+    width: 300px;
+    border: none;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: white;
+    align-items: center;
+    height: 15rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-image1{
+    height: 1rem;
+}
+.card-number{
+    text-align: center;
+    display: flex;
+    border: 10px solid rgb(27, 194, 236);
+    border-radius: 50%;
+    height: 11rem;
+    width: 11rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.table-container{
+    overflow-x: auto;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border:1px solid black;
+    margin-bottom: 20px;
+    border-radius: 0.2rem;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    color: black;
+    
+}
+th{
+    background-color: rgba(249, 248, 245, 0.742);
+    border-bottom: 1px solid black;
+    padding: 0.5rem;
+    color: black;
+    font-size: small;
+    font-weight: 0.1;
+}
+td{
+    padding: 1rem;
+    color: black;
+}
+.active-anchor{
+    border-bottom: 2.5px solid rgb(27, 194, 236);
+}
+
+.question-mark{
+    height: 1.5rem;
+}
+
+@media (max-width:400px){
+    .nav-image{
+        margin: 0.5rem;
+       height: 2rem;
+    }
+    .nav-image1{
+        margin: 0.5rem;
+       height: 2rem;
+    }
+}
+
+@media (max-width:900px){
+    .nav-list{
+        display: none;
+    }
+    .all-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin: 1rem;
+    }
+}
+
+@media (max-width:1100px){
+    .card{
+        width: 90%;
+        margin:0.5rem;
+    }
+}
