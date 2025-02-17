@@ -1,0 +1,23 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.5",
+    "jest-environment-jsdom": "^27.5.1"
+  },
+  
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "jsdom": "^26.0.0",
+    "path": "^0.12.7",
+    "util": "^0.12.5"
+  }
+}
