@@ -1,0 +1,10 @@
+#main{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#input{
+    width: 20rem;
+}
